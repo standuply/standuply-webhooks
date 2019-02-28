@@ -27,7 +27,7 @@ interface WebhookMessageUserAnswers {
     userName: string;
     type: 'answer-later' | 'timed-out' | 'normal' | 'ignored-by-status' | 'quick-answer'
         | 'video-answer' | 'voice-answer' | 'taking-part-in-another-report' | 'answer-next-time' | 'skipped';
-    answers: Array<WebhookRespondentDialogAnswer> | WebhookRespondentDialogQuickAnswer
+    data: Array<WebhookRespondentDialogAnswer> | WebhookRespondentDialogQuickAnswer
         | WebhookRespondentDialogVideoAnswer | WebhookRespondentDialogVoiceAnswer | WebhookRespondentsDialogAnswerLater
         | WebhookTakingPartInAnotherReportDialogAnswer | WebhookRespondentsDialogAnswerNextTime
         | WebhookSkippedDialogAnswerData;
